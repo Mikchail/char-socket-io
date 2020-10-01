@@ -28,7 +28,7 @@ export default class Chat extends PureComponent {
 
   componentDidMount(){
     socket.on("message", (data) => {
-      
+      console.log(data)
       this.handleState(data)
    
     });
